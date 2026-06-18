@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="#{home.title}">Inicio</title>
+    <link rel="stylesheet" th:href="@{/css/homePage.css}">
+</head>
+<body>
+    <div class="container">
+        <h1 th:text="#{home.welcome}">Bienvenido</h1>
+        <p th:text="#{home.description}">Esta es la página de inicio de nuestra aplicación.</p>
+        
+        <div class="button-group">
+            <a href="#" th:text="#{home.explore}">Explorar</a>
+            <a href="#" th:text="#{home.about}">Acerca de</a>
+            <a href="#" th:text="#{home.contact}">Contacto</a>
+            <a th:href="@{/details}">Link simple</a>
+            <a th:href="@{/api/requestParam?message=Hello+World}">Link con parametro GET</a>
+
+        </div>
+        
+        <div class="info">
+            <p th:text="|${#dates.format(#dates.createNow(), 'dd/MM/yyyy HH:mm')}|">Fecha actual</p>
+        </div>
+    </div>
+</body>
+</html>

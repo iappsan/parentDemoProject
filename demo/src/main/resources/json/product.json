@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "PlayStation 5",
+        "description": "Consola de videojuegos Sony PlayStation 5",
+        "price": 7980.0
+    },
+    {
+        "id": 2,
+        "name": "Xbox Series X",
+        "description": "Consola de videojuegos Microsoft Xbox Series X",
+        "price": 8299.2
+    },
+    {
+        "id": 3,
+        "name": "Nintendo Switch",
+        "description": "Consola de videojuegos Nintendo Switch",
+        "price": 234.08
+    },
+    {
+        "id": 4,
+        "name": "Pc Gaming",
+        "description": "Tarjeta de video NVIDIA, procesador AMD Ryzen 7, 16GB RAM",
+        "price": 42560.0
+    }
+]

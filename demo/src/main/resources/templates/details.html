@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+</head>
+<body>
+    <h1 th:text="${title}"></h1>
+    <p>Name: <span th:text="${user.name}"></span></p>
+    <p>LastName: <span th:text="${user.lastName}"></span></p>
+    <p th:if="${user.phone == null || user.phone.isEmpty()}">Phone: Not provided</p>
+    <p th:if="${user.phone != null && !user.phone.isEmpty()}">Phone: <span th:text="${user.phone}"></span></p>
+
+    <h2>List of other users</h2>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>LastName</th>
+            <th>Phone</th>
+        </tr>
+        <tr th:each="u, iterStat : ${usersList2}">
+            <td th:text="${iterStat.index + 1}"></td>
+            <td th:text="${u.name}"></td>
+            <td th:text="${u.lastName}"></td>
+            <td th:if="${u.phone != null && !u.phone.isEmpty()}" th:text="${u.phone}"></td>
+        </tr>
+    </table>
+</body>
+</html>
