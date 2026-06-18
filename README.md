@@ -1,4 +1,4 @@
-# parentProject
+# parentDemoProject
 
 Multimodule Maven project containing `demo` and `difactura` modules.
 
