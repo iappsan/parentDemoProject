@@ -1,0 +1,25 @@
+## Maven
+**/target/
+
+## IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+
+## OS files
+.DS_Store
+Thumbs.db
+
+## Eclipse
+.classpath
+.project
+
+## Logs
+logs/
+*.log
+
+## Compiled class files
+**/*.class
